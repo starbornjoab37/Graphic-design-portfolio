@@ -30,26 +30,27 @@ body {
 .hero {
   background: radial-gradient(circle at top left, #ff6b6b, #4612c1);
   color: white;
-  padding: 140px 8%;
+  padding: 100px 8%; /* increased height */
 }
 
 .hero-wrap {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px; /* more space between image and text */
   max-width: 1000px;
 }
 
 .hero img {
-  width: 90px;
-  height: 90px;
+  width: 190px; /* larger image */
+  height: 200px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: cover; /* fits image nicely */
   box-shadow: 0 12px 26px rgba(0,0,0,0.35);
 }
 
 .hero h1 {
   font-size: 3rem;
+  color: rgb(255, 251, 251);
 }
 
 .hero p {
@@ -57,6 +58,7 @@ body {
   font-size: 1.3rem;
   max-width: 650px;
   opacity: 0.95;
+  color: rgb(253, 252, 252);
 }
 
 /* SECTION */
@@ -65,51 +67,43 @@ section {
 }
 
 .section-title {
-  font-size: 2.4rem;
-  margin-bottom: 10px;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  color: black;
 }
 
 .section-sub {
-  max-width: 650px;
+  max-width: 700px;
   margin-bottom: 60px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  color: #333;
 }
 
 /* PROJECT */
 .project {
-  margin-bottom: 120px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 0.6s ease;
-}
-
-.project.show {
-  opacity: 1;
-  transform: translateY(0);
+  margin-bottom: 100px;
 }
 
 .project h3 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: black;
 }
 
 .project p {
   max-width: 700px;
   margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #444;
 }
 
 /* IMAGE DISPLAY */
 .visual {
   max-width: 400px;
-  margin: 40px auto;
+  margin: 30px auto;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0,0,0,0.25);
-  transition: transform 0.4s ease;
-}
-
-.visual:hover {
-  transform: translateY(-6px);
 }
 
 .visual img {
@@ -121,30 +115,33 @@ section {
 /* PDF EMBED */
 .pdf-view {
   width: 100%;
-  height: 550px;
-  border: none;
+  height: 400px; /* smaller default height */
+  border: 1px solid #ccc;
   border-radius: 14px;
+  resize: vertical; /* user can adjust height */
+  overflow: auto;
 }
 
-/* MEETUP STRUGGLE NOTE */
+/* STRUGGLE NOTE */
 .struggle-note {
   max-width: 650px;
   margin-top: 20px;
   padding-left: 16px;
   border-left: 3px solid var(--warm);
   font-size: 0.95rem;
-  color: #444;
+  color: #555;
 }
 
 /* CONTACT */
 .contact {
   background: var(--dark);
   color: white;
+  padding: 50px 8%;
 }
 
 .contact p {
   margin-top: 15px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .contact a {
@@ -166,6 +163,18 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
 }
 </style>
 </head>
@@ -176,10 +185,9 @@ footer {
 <div class="hero">
   <div class="hero-wrap">
     <div>
-      <h1>Hi, I’m Ombam Judith Beril Atieno;</h1>
+      <h1>Hi, I’m Ombam Judith Beril Atieno</h1>
       <p>
-        I design to solve real communication problems; in classrooms, hostels,
-        villages, and urban spaces; using clarity, warmth, and intention.
+        Welcome! I design from scratch to solve communication challenges in classrooms, hostels, and communities. Every project is created with intention, clarity, and warmth.
       </p>
     </div>
     <img src="Beryl Pasport.png" alt="Beril Passport">
@@ -190,17 +198,14 @@ footer {
 <section>
   <h2 class="section-title">Selected Work</h2>
   <p class="section-sub">
-    Every design here started as a problem someone was facing; confusion,
-    silence, lack of attention, or lack of connection; design helped translate
-    meaning into something people could feel and act on.
+    All projects started as real problems that needed creative solutions. From confusion to disengagement, my designs transform challenges into visual communication people can feel, understand, and act on.
   </p>
 
   <!-- PROJECT 1 -->
   <div class="project">
-    <h3>Success Card for a Classroom</h3>
+    <h3>Success Card for My Sister</h3>
     <p>
-      The goal was simple; make recognition feel personal and encouraging;
-      not loud, not childish; something a student would want to keep.
+      Created a personal success card for my sister that everyone in her class loved. The design was crafted entirely from scratch, focusing on warmth, encouragement, and memorable recognition.
     </p>
 
     <div class="visual">
@@ -214,8 +219,7 @@ footer {
   <div class="project">
     <h3>Hostel Theft Awareness Poster</h3>
     <p>
-      Clothes were being stolen; tension was growing; communication needed
-      urgency without blame; visibility without panic.
+      Designed a poster to address the ongoing theft of clothes in my hostel. The goal was to raise awareness and communicate urgency without blame or panic. Entirely created from scratch.
     </p>
 
     <div class="visual">
@@ -227,8 +231,7 @@ footer {
   <div class="project">
     <h3>Village-Based Meetup Poster</h3>
     <p>
-      Most communication was text; people were disengaged; the poster needed
-      to respect simplicity while still feeling important.
+      Developed a poster for a village-based meetup group. Most communication was text-based, so I created something clear, inviting, and engaging from scratch. The Nairobi version shows several iterations to improve clarity and impact.
     </p>
 
     <div class="visual">
@@ -238,8 +241,7 @@ footer {
     <iframe class="pdf-view" src="Nairobi Chapter Meet.pdf"></iframe>
 
     <div class="struggle-note">
-      This design took several iterations; some versions felt too cold;
-      others too crowded; clarity came from restraint and spacing.
+      Several iterations were required to achieve clarity and simplicity. The final design balances spacing, visual importance, and approachability.
     </div>
   </div>
 </section>
@@ -248,9 +250,9 @@ footer {
 <section class="contact">
   <h2 class="section-title">Let’s Work Together</h2>
   <p>
-    Email; <a href="mailto:ombamjudith115@gmail.com">ombamjudith115@gmail.com</a><br>
-    WhatsApp; +254 111 357 622<br>
-    Call; +254 713 781 789
+    Email: <a href="mailto:ombamjudith115@gmail.com">ombamjudith115@gmail.com</a><br>
+    WhatsApp: +254 111 357 622<br>
+    Call: +254 713 781 789
   </p>
 </section>
 
@@ -258,19 +260,6 @@ footer {
 © 2025 Ombam Judith Beril Atieno
 </footer>
 
-<script>
-const projects = document.querySelectorAll('.project');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-}, { threshold: 0.2 });
-
-projects.forEach(project => observer.observe(project));
-</script>
-
 </body>
 </html>
+
