@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ombam Judith Beril Atieno | Graphic Designer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --dark: #0e0e0e;
+  --warm: #956bff;
+  --soft: #fff7f3;
+  --ink: #222222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: var(--soft);
+  color: var(--ink);
+  line-height: 1.8;
+}
+
+/* HERO */
+.hero {
+  background: radial-gradient(circle at top left, #ff6b6b, #4612c1);
+  color: white;
+  padding: 140px 8%;
+}
+
+.hero-wrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+}
+
+.hero img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.35);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  max-width: 650px;
+  opacity: 0.95;
+}
+
+/* SECTION */
+section {
+  padding: 40px 8%;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.section-sub {
+  max-width: 650px;
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+}
+
+/* PROJECT */
+.project {
+  margin-bottom: 120px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease;
+}
+
+.project.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  max-width: 700px;
+  margin-bottom: 25px;
+}
+
+/* IMAGE DISPLAY */
+.visual {
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease;
+}
+
+.visual:hover {
+  transform: translateY(-6px);
+}
+
+.visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* PDF EMBED */
+.pdf-view {
+  width: 100%;
+  height: 550px;
+  border: none;
+  border-radius: 14px;
+}
+
+/* MEETUP STRUGGLE NOTE */
+.struggle-note {
+  max-width: 650px;
+  margin-top: 20px;
+  padding-left: 16px;
+  border-left: 3px solid var(--warm);
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* CONTACT */
+.contact {
+  background: var(--dark);
+  color: white;
+}
+
+.contact p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: var(--warm);
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: #aaa;
+  padding: 35px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-wrap">
+    <div>
+      <h1>Hi, I’m Ombam Judith Beril Atieno;</h1>
+      <p>
+        I design to solve real communication problems; in classrooms, hostels,
+        villages, and urban spaces; using clarity, warmth, and intention.
+      </p>
+    </div>
+    <img src="Beryl Pasport.png" alt="Beril Passport">
+  </div>
+</div>
+
+<!-- WORK -->
+<section>
+  <h2 class="section-title">Selected Work</h2>
+  <p class="section-sub">
+    Every design here started as a problem someone was facing; confusion,
+    silence, lack of attention, or lack of connection; design helped translate
+    meaning into something people could feel and act on.
+  </p>
+
+  <!-- PROJECT 1 -->
+  <div class="project">
+    <h3>Success Card for a Classroom</h3>
+    <p>
+      The goal was simple; make recognition feel personal and encouraging;
+      not loud, not childish; something a student would want to keep.
+    </p>
+
+    <div class="visual">
+      <img src="Success Joyce (1).png" alt="Success Card Design">
+    </div>
+
+    <iframe class="pdf-view" src="SUCCESS JOYCE (1).pdf"></iframe>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project">
+    <h3>Hostel Theft Awareness Poster</h3>
+    <p>
+      Clothes were being stolen; tension was growing; communication needed
+      urgency without blame; visibility without panic.
+    </p>
+
+    <div class="visual">
+      <img src="THEFT POSTER (2).png" alt="Hostel Theft Poster">
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project">
+    <h3>Village-Based Meetup Poster</h3>
+    <p>
+      Most communication was text; people were disengaged; the poster needed
+      to respect simplicity while still feeling important.
+    </p>
+
+    <div class="visual">
+      <img src="MeetupPoster (4).png" alt="Meetup Poster">
+    </div>
+
+    <iframe class="pdf-view" src="Nairobi Chapter Meet.pdf"></iframe>
+
+    <div class="struggle-note">
+      This design took several iterations; some versions felt too cold;
+      others too crowded; clarity came from restraint and spacing.
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2 class="section-title">Let’s Work Together</h2>
+  <p>
+    Email; <a href="mailto:ombamjudith115@gmail.com">ombamjudith115@gmail.com</a><br>
+    WhatsApp; +254 111 357 622<br>
+    Call; +254 713 781 789
+  </p>
+</section>
+
+<footer>
+© 2025 Ombam Judith Beril Atieno
+</footer>
+
+<script>
+const projects = document.querySelectorAll('.project');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+projects.forEach(project => observer.observe(project));
+</script>
+
+</body>
+</html>
